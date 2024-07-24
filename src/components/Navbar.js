@@ -3,8 +3,10 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { useAuth0 } from "@auth0/auth0-react";
 
+
 export default function Navbar(props) {
   const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
+  console.log("current user",user)
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -47,3 +49,4 @@ export default function Navbar(props) {
 Navbar.propTypes = {
   title: PropTypes.string
 };
+

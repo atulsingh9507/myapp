@@ -7,6 +7,7 @@ const Login = () => {
 
   return (
     <div className="container text-center mt-5">
+      <h1>Welcome To Atul World</h1><hr></hr><br></br>
       <h2>Please log in to continue</h2>
       <button className="btn btn-primary" onClick={() => loginWithRedirect()}>Login</button>
     </div>
